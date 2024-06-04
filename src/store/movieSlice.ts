@@ -22,7 +22,8 @@ const initialState: IDataState = {
 
 export const fetchData = createAsyncThunk(
   "movie/fetchData",
-  async (page: number): Promise<IMovieResponseModel<Result[]>> => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  async (page: number = 1): Promise<any> => {
     try {
       const response = await getMovie(page);
       if (!response || !response.page || !response.results) {
