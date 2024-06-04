@@ -13,11 +13,11 @@ import Category from "../../components/Category";
 export const Home: React.FC = (): JSX.Element => {
   const dispatch = useDispatch();
 
-  const { data, loading, error, page, total_pages, total_results } =
+  const { data, loading, error, page } =
     useSelector((state: RootState) => state.data);
 
   useEffect(() => {
-    dispatch(fetchData(page));
+    dispatch(fetchData(page) as unknown as never);
   }, [dispatch, page]);
 
   const handlePageChange = (page: number = 1) => {
