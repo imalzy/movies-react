@@ -1,0 +1,30 @@
+:root {
+  --brand-celadon-green: #008475;
+  --brand-persian-green: #1b998b;
+  --brand-june-bud: #c5d86d;
+  --brand-portland-orange: #f46036;
+  --text---black: #000;
+  --text---roman-silver: #82828b;
+  --text-silver-metallic: #afb1bd;
+  --text-gainsboro: #e6e6eb;
+  --text-ghost-white: #f0f0f5;
+  --text-cultured: #f9f9fb;
+  --text-white: #fff;
+
+  --font-family: "Galano Grotesque", sans-serif;
+  --second-family: "Messina Sans", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --font3: "IBM Plex Sans", sans-serif;
+  --font4: "Nunito", sans-serif;
+  --font5: "Dominique", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--third-family);
+}
